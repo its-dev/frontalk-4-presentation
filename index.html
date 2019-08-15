@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Frontalk</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/monokai.css">
+
+        <!-- Printing and PDF exports -->
+        <style>
+            .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+                text-transform: none;
+            }
+            .reveal img.pic {
+                border: 0;
+                box-shadow: none;
+                background: none;
+            }
+        </style>
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <p style="font-size: 0.8em">Internal IT Stand Up by ITSumma</p>
+                    <h1>FRONTALK #4</h1>
+                    <p>VanilaJS component (experiment)</p>
+                </section>
+                <section>
+                    <p>Виновник сего деяния — <a target="_blank" href="http://learn.javascript.ru/widgets-structure">статья на learn.javascript</a></p>
+                </section>
+                <section>
+                    <h3>Что нужно знать?</h3>
+                    <ul>
+                        <li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/new">Оператор new</a></li>
+                        <li><a target="_blank" href="https://getinstance.info/articles/javascript/execution-context/">Контекст this</a></li>
+                        <li><a target="_blank" href="https://learn.javascript.ru/call-apply">Декорирование call, apply</a></li>
+                        <li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures">Замыкание</a></li>
+                        <li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty</a></li>
+                        <li><a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings">Шаблонные строки</a></li>
+                        <li><a target="_blank" href="https://monsterlessons.com/project/lessons/observer-pattern-v-javascript">Паттерн observer</a></li>
+                        <li><a target="_blank" href="https://parceljs.org/">Сборщик Parcel</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Сущности или Фичи</h3>
+                    <ul>
+                        <li>Компонент</li>
+                        <li>Декоратор</li>
+                    </ul>
+                </section>
+                <section>
+                    <section>
+                        <h1>Demo 1: Sliders</h1>
+                        <p>Ссылка на код: <a target="_blank" href="https://github.com/its-dev/frontalk-4-demo-1">GitHub</a></p>
+                    </section>
+                    <section data-background-video="./img/demo-1.mp4" data-background-size="contain"></section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Demo 2: Chat app</h1>
+                        <p>Ссылка на код: <a target="_blank" href="https://github.com/its-dev/frontalk-4-demo-2">GitHub</a></p>
+                    </section>
+                    <section data-background-video="./img/demo-2.mp4" data-background-size="contain"></section>
+                    <section>
+                        <ul>
+                            <li>Root Render</li>
+                            <li>Single Entry (widget)</li>
+                            <li>Css Modules (hash className)</li>
+                            <li>Adaptive from Root Element</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <h1>THX.</h1>
+                </section>
+            </div>
+        </div>
+
+        <script src="js/reveal.js"></script>
+
+        <script>
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true }
+                ]
+            });
+        </script>
+    </body>
+</html>
